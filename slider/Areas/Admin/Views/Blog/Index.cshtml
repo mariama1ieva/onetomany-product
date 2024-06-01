@@ -1,0 +1,59 @@
+﻿@model List<Blog>
+<div class="content-wrapper mt-5">
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y" style="align-items:center;display:flex;justify-content:center;">
+
+        <!-- Basic Bootstrap Table -->
+        <div class="card">
+            <h5 class="card-header">Table Basic</h5>
+            <div class="table-responsive text-nowrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Blog</th>
+                            <th>Operation</th>
+
+                        </tr>
+
+                    </thead>
+                    <a asp-area="Admin" asp-controller="Blog" asp-action="Create">  <button type="button" class="btn btn-success " style="margin-left:300px;">Create</button></a>
+
+
+                    <tbody class="table-border-bottom-0">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Date
+                                    @item.Image
+                                    @item.Title
+                                    @item.Description
+
+                                </td>
+                                <td>
+
+                                    <a asp-action="Info" asp-route-id="@item.Id"> <button type="button" class="btn btn-info">Info</button></a>
+                                    <a asp-action="Edit" asp-route-id="@item.Id"><button type="button" class="btn btn-primary">Edit</button> </a>
+                                    <form class="forms-sample d-inline" asp-action="Delete" method="post" asp-route-id="@item.Id">
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+
+                                    </form>
+
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <!--/ Basic Bootstrap Table -->
+    </div>
+
+
+    

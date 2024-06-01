@@ -1,0 +1,34 @@
+﻿@using slider.ViewModels.Blogs
+@model BlogEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h3 class="card-header">Create</h3>
+        <div>
+            <form asp-action="Edit" method="post">
+                <label asp-for=Title class="form-label">Title</label>
+                <input asp-for=Title type="text" class="form-control" placeholder="add..." maxlength="120">
+                <span class="text-danger" asp-validation-for="Title"></span>
+                <label asp-for=Description class="form-label">Description</label>
+                <input asp-for=Description type="text" class="form-control" placeholder="add..." maxlength="120">
+                <span class="text-danger" asp-validation-for="Description"></span>
+                <label asp-for=Image class="form-label">Image</label>
+                <input asp-for=Image type="text" class="form-control" placeholder="add..." maxlength="120">
+                <span class="text-danger" asp-validation-for="Image"></span>
+                <label asp-for=Date class="form-label">Date</label>
+                <input asp-for=Date type="text" class="form-control" placeholder="add..." maxlength="120">
+                <span class="text-danger" asp-validation-for="Date"></span>
+                <button type="submit" class="btn btn-success mt-5">Submit</button>
+                <a asp-action="Index" asp-controller="Blog" class="btn btn-info mt-5">Cancel</a>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>

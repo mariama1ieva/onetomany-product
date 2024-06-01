@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\admin\**" />
+    <Content Remove="wwwroot\admin\**" />
+    <EmbeddedResource Remove="wwwroot\admin\**" />
+    <None Remove="wwwroot\admin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\js\config.js" />
+    <None Include="wwwroot\assets\js\dashboards-analytics.js" />
+    <None Include="wwwroot\assets\js\extended-ui-perfect-scrollbar.js" />
+    <None Include="wwwroot\assets\js\form-basic-inputs.js" />
+    <None Include="wwwroot\assets\js\main.js" />
+    <None Include="wwwroot\assets\js\pages-account-settings-account.js" />
+    <None Include="wwwroot\assets\js\ui-modals.js" />
+    <None Include="wwwroot\assets\js\ui-popover.js" />
+    <None Include="wwwroot\assets\js\ui-toasts.js" />
+    <None Include="wwwroot\assets\vendor\fonts\boxicons\boxicons.svg" />
+    <None Include="wwwroot\assets\vendor\fonts\boxicons\boxicons.woff2" />
+    <None Include="wwwroot\assets\vendor\js\bootstrap.js" />
+    <None Include="wwwroot\assets\vendor\js\helpers.js" />
+    <None Include="wwwroot\assets\vendor\js\menu.js" />
+    <None Include="wwwroot\assets\vendor\libs\apex-charts\apexcharts.js" />
+    <None Include="wwwroot\assets\vendor\libs\highlight\highlight.js" />
+    <None Include="wwwroot\assets\vendor\libs\jquery\jquery.js" />
+    <None Include="wwwroot\assets\vendor\libs\masonry\masonry.js" />
+    <None Include="wwwroot\assets\vendor\libs\perfect-scrollbar\perfect-scrollbar.js" />
+    <None Include="wwwroot\assets\vendor\libs\popper\popper.js" />
+    <None Include="wwwroot\css\style.css.map" />
+    <None Include="wwwroot\js\script.js" />
+    <None Include="wwwroot\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\sass\lib\_common.scss" />
+    <None Include="wwwroot\sass\lib\_mixins.scss" />
+    <None Include="wwwroot\sass\lib\_varibales.scss" />
+    <None Include="wwwroot\sass\sections\_about.scss" />
+    <None Include="wwwroot\sass\sections\_accordion.scss" />
+    <None Include="wwwroot\sass\sections\_blog.scss" />
+    <None Include="wwwroot\sass\sections\_experts.scss" />
+    <None Include="wwwroot\sass\sections\_footer.scss" />
+    <None Include="wwwroot\sass\sections\_header.scss" />
+    <None Include="wwwroot\sass\sections\_instagram.scss" />
+    <None Include="wwwroot\sass\sections\_product-list.scss" />
+    <None Include="wwwroot\sass\sections\_product.scss" />
+    <None Include="wwwroot\sass\sections\_progress.scss" />
+    <None Include="wwwroot\sass\sections\_say.scss" />
+    <None Include="wwwroot\sass\sections\_shop-list.scss" />
+    <None Include="wwwroot\sass\sections\_slider.scss" />
+    <None Include="wwwroot\sass\sections\_subscribe.scss" />
+    <None Include="wwwroot\sass\sections\_tab.scss" />
+    <None Include="wwwroot\sass\style.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.29">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.29">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,46 @@
+﻿@model ProductDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container bootdey ">
+<div class="col-md-12">
+        <section class="panel mt-3 ">
+            <div class="panel-body   ">
+                <div class="col-md-6 d-flex align-items-center justify-content-center " style="margin-left:250px;">
+                <div class="pro-img-details  ">
+                    <img src="~/img/@Model.Images.FirstOrDefault(m=>m.IsMain).Image" alt="" style="width:500px;height:500px;" >
+                </div>
+                    <div class="pro-img-list" style="margin-left:100px;">
+                        @foreach (var item in Model.Images.Where(m =>m.IsMain==false))
+                        {
+                            <a href="#">
+                                <img src="~/img/@item.Image" alt="" style="width:200px;height:200px;">
+                            </a>
+                        }
+                  
+                </div>
+            </div>
+                <div class="col-md-6  " style="margin-left:200px;">
+                <h4 class="pro-d-title">
+                    <a href="#" class="">
+                       @Model.Name
+                    </a>
+                </h4>
+                <p>
+                    @Model.Description
+                </p>
+                <div class="product_meta">
+                    <span class="posted_in"> <strong>Category:</strong>@Model.Category</span>
+                </div>
+                <div class="m-bot15"> <strong>Price : </strong> <span class="amount-old">$@Model.Price</span></div>
+
+                    <a asp-action="Index" asp-controller="Product" class="btn btn-info mt-5">Back</a>
+
+                </div>
+        </div>
+
+    </section>
+</div>
+  </div>
+

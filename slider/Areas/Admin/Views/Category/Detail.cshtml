@@ -1,0 +1,26 @@
+﻿@using slider.ViewModels.Categories
+@model CategoryDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h3 class="card-header">Detail</h3>
+        <div>
+         
+                <label asp-for=Name class="form-label">Category Name</label>
+                <input asp-for=Name type="text" class="form-control"  >
+               @if(Model.Count!=0){
+            <h5>Product count:@Model.Count</h5>
+
+                }
+                <a asp-action="Index" asp-controller="Category" class="btn btn-info mt-5">Back</a>
+  
+
+
+        </div>
+    </div>
+
+</div>
+

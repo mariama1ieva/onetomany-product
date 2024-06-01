@@ -1,0 +1,32 @@
+﻿@using slider.ViewModels.Blogs
+@model BlogInfoVM
+@{
+    ViewData["Title"] = "Info";
+}
+
+
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h3 class="card-header">Detail</h3>
+        <div>
+
+            <label asp-for=Title class="form-label">Blog Title</label>
+            <input asp-for=Title type="text" class="form-control">
+
+            <label asp-for=Description class="form-label">Blog Description</label>
+            <input asp-for=Description type="text" class="form-control">
+
+            <label asp-for=Image class="form-label">Blog Image</label>
+            <input asp-for=Image type="text" class="form-control">
+            <label asp-for=Date class="form-label">Blog Date</label>
+            <input asp-for=Date type="text" class="form-control">
+         
+            <a asp-action="Index" asp-controller="Blog" class="btn btn-info mt-5">Back</a>
+
+
+
+        </div>
+    </div>
+
+</div>
+

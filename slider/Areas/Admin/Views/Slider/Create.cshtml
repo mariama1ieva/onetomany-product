@@ -1,0 +1,23 @@
+﻿@model SliderCreateVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h3 class="card-header">Create</h3>
+        <div>
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <input asp-for="Names" class="form-control" multiple >
+                <span class="text-danger" asp-validation-for="Names"></span>
+                <button type="submit" class="btn btn-success mt-5">Submit</button>
+                <a asp-action="Index" asp-controller="Slider" class="btn btn-info mt-5">Cancel</a>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>

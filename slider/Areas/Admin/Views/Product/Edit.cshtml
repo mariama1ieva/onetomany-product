@@ -1,0 +1,37 @@
+﻿@model ProductEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h3 class="card-header">Create</h3>
+        <div>
+            <form asp-action="Edit" method="post">
+                <label class="mt-4">Name</label>
+
+                <input asp-for=Name type="text" class="form-control" placeholder="Product name..." maxlength="120">
+                <label class="mt-4">Categroy</label>
+
+                <input asp-for=Category type="text" class="form-control" disabled>
+                <label class="mt-4">description</label>
+
+                <input asp-for=Description type="text" class="form-control" placeholder="Product description..." maxlength="120">
+                <label class="mt-4">price</label>
+
+                <input asp-for=Price type="text" class="form-control" placeholder="Product price..." maxlength="120">
+                <label class="mt-4">Category</label>
+                <select class="form-control text-black" asp-for="CategoryId" asp-items="@ViewBag.Categories">
+                </select>
+                <label class="mt-4">Images</label>
+                <input asp-for="Photos" class="form-control">
+                <button type="submit" class="btn btn-success mt-5">Submit</button>
+                <a asp-action="Index" asp-controller="Product" class="btn btn-info mt-5">Cancel</a>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>

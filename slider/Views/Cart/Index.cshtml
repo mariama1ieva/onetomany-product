@@ -1,0 +1,56 @@
+﻿@model CartVM
+
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if(Model.Total != 0)
+{
+    <div class="container cart-body">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Count</th>
+                    <th scope="col">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.BasketProducts)
+                {
+                    <tr>
+                        <td><img src="~/img/@item.Image" style="width:100px;height:100px;" /></td>
+                        <td>@item.Name</td>
+                        <td>@item.Description</td>
+                        <td>@item.Category</td>
+                        <td>@item.Price</td>
+                        <td>@item.Count</td>
+                        <td><button class="btn btn-danger delete-product-basket" data-id="@item.Id">Delete</button></td>
+
+                    </tr>
+                }
+
+
+
+            </tbody>
+        </table>
+        <h1 class="total-price"> ToTal Price:$@Model.Total</h1>
+    </div>
+}
+else
+{
+    <div class="alert alert-danger container" role="alert">
+       Basket is empty.
+    </div>
+}
+
+
+
+
+

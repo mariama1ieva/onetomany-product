@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|c:\\users\\asus\\onedrive\\desktop\\slider\\fiorella\\slider\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|solutionrelative:slider\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|c:\\users\\asus\\onedrive\\desktop\\slider\\fiorella\\slider\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|solutionrelative:slider\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|c:\\users\\asus\\onedrive\\desktop\\slider\\fiorella\\slider\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|solutionrelative:slider\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|c:\\users\\asus\\onedrive\\desktop\\slider\\fiorella\\slider\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|solutionrelative:slider\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|c:\\users\\asus\\onedrive\\desktop\\slider\\fiorella\\slider\\areas\\admin\\views\\blog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|solutionrelative:slider\\areas\\admin\\views\\blog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|c:\\users\\asus\\onedrive\\desktop\\slider\\fiorella\\slider\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2973736-AEC4-4432-9D4C-70028A953EFB}|slider\\slider.csproj|solutionrelative:slider\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "slider\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Services\\CategoryService.cs",
+              "RelativeToolTip": "slider\\Services\\CategoryService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:54:40.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "slider\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Services\\ProductService.cs",
+              "RelativeToolTip": "slider\\Services\\ProductService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:51:13.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Views\\Blog\\Edit.cshtml",
+              "RelativeDocumentMoniker": "slider\\Areas\\Admin\\Views\\Blog\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Views\\Blog\\Edit.cshtml",
+              "RelativeToolTip": "slider\\Areas\\Admin\\Views\\Blog\\Edit.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T16:29:18.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "slider\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "slider\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAswFgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T16:28:45.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "slider\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "slider\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T15:05:53.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "slider\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\Desktop\\slider\\Fiorella\\slider\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "slider\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwFYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:34:22.962Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

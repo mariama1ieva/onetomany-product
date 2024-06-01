@@ -1,0 +1,110 @@
+﻿@using slider.Helpers.Extentions
+@using slider.ViewModels.Products
+@model Paginate<ProductVM>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="content-wrapper mt-5">
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y" style="align-items:center;display:flex;justify-content:center;">
+
+        <!-- Basic Bootstrap Table -->
+        <div class="card">
+            <h5 class="card-header">Table Basic</h5>
+            <div class="table-responsive text-nowrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Description</th>
+
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Operations</th>
+
+
+                        </tr>
+
+                    </thead>
+                    <a asp-area="Admin" asp-controller="Product" asp-action="Create">  <button type="button" class="btn btn-success " style="margin-left:300px;">Create</button></a>
+
+
+                    <tbody class="table-border-bottom-0">
+                        @foreach (var item in Model.Datas)
+                        {
+                            <tr>
+                                <td>
+                                 <img src="~/img/@item.Image" style="width:100px;height:100px;" />
+
+                                </td>
+                                <td>
+                                    @item.Name
+
+                                </td>
+                                <td>
+                                    @item.Description
+
+                                </td>
+                                <td>
+                                    @item.Price
+
+                                </td>
+                                <td>
+                                    @item.Category
+
+                                </td>
+                                <td>
+
+                                    <a asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id"> <button type="button" class="btn btn-info">Detail</button></a>
+                                    <a asp-action="Edit" asp-route-id="@item.Id"><button type="button" class="btn btn-primary">Edit</button> </a>
+                                    <form class="forms-sample d-inline" asp-action="Delete" method="post" asp-route-id="@item.Id">
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+
+                                    </form>
+
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+                </table     
+                <div class="paginate-area"  >
+                        <nav aria-label="...">
+  <ul class="pagination">
+                           
+                                   <li class="page-item @(Model.HasPrevious ? " " : "disabled") ">
+       <a class="page-link"asp-action="Index" asp-route-page = "@(Model.CurrentPage - 1)">Previous</a>
+                                </li>
+                            
+
+    @for (int i = 1; i <= Model.TotalPage; i++){
+    <li class="page-item @(Model.CurrentPage == i ? "disabled" :""  ) "><a class="page-link@(Model.CurrentPage == i ? "active" :""  )" asp-action="Index" asp-route-page="@i">@i</a></li>
+
+    }
+
+                                           
+                                   <li class="page-item @(Model.HasNext ? "":"disabled")  ">
+       <a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage + 1)">Next</a>
+                                </li>
+                            
+  </ul>
+</nav>
+                </div>
+            
+
+
+
+            </div>
+
+        </div>
+        <!--/ Basic Bootstrap Table -->
+    </div>
+
+
+
+
+

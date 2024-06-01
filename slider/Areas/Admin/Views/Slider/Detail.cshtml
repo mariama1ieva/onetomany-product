@@ -1,0 +1,22 @@
+﻿@using slider.ViewModels.Slider
+@model SliderDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+<div class="container">
+    <div class="card mt-4 w-100" style="display:flex;align-items:center;">
+        <h3 class="card-header">Detail</h3>
+        <div>
+            <form asp-action="Detail" method="post" enctype="multipart/form-data">
+
+                 <img style="width:150px;height:100px;" class="form-control" multiple src="~/img/@Model.Name"/>
+                <a asp-action="Index" asp-controller="Slider" class="btn btn-info mt-5">Cancel</a>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>
